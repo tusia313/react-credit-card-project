@@ -1,27 +1,17 @@
 import { useState } from "react"
 
 const App = () => {
-  const [formData,setFormData] = useState({})
-
-  const chandleChange = (e) => {
-    const name = e.target.name
-    const value = e.target.value
-    console.log(formData)
-    setFormData(
-      {
-        ...formData,
-        [name]: value
-      }
-    )
-  }
+  const [firstName, setFirstName] = useState(null)
+  const [email, setEmail] = useState(null)
+  console.log(firstName, email)
 
   return (
     <div>
-   <form>
-    <input onChange={chandleChange} placeholder="first name" value={formData.firstName} name="firstName"></input>
-    <input onChange={chandleChange} placeholder="email" type="email" value={formData.email} name="email"></input>
-   </form>
-   </div>
+      <form>
+        <input onChange={(e) => setFirstName(e.target.value)} placeholder="first name"></input>
+        <input onChange={(e) => setEmail(e.target.value)} placeholder="email" type="email"></input>
+      </form>
+    </div>
   )
 }
 
