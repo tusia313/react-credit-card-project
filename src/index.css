@@ -7,9 +7,6 @@
 }
 
 * {
-  color: var(--font-color);
-  font-weight: 900;
-  font-size: 20px;
   font-family: 'Arial', sans-serif;
 }
 
@@ -23,14 +20,92 @@ body {
 }
 
 .form-container {
-  padding: 20px;
+  padding: 20px 20px;
   background: lightblue;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: center; */
   gap: 20px;
   border-radius: 5px;
   border: 2px solid var(--main-color);
   box-shadow: 4px 4px var(--main-color);
+}
+
+form {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form .input-container {
+  margin: 7px 0;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  color: var(--font-color-sub);
+  font-weight: 600;
+}
+
+form input {
+  width: 300px;
+  margin: 5px 0;
+  padding: 11px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--font-color);
+  outline: none;
+  font-size: inherit;
+}
+
+form input::placeholder {
+  color: var(--font-color-sub);
+  opacity: 0.8;
+}
+
+form input:focus {
+  border: 2px solid var(--input-focus);
+}
+
+form input[type='submit'] {
+  margin: 50px auto 0 auto;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+form input[type='month'] {
+  width: 200px;
+}
+
+form input#cvv {
+  width: 60px;
+}
+
+form .supporting-inputs-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 7px 0;
+}
+
+form .info-message {
+  width: 100%;
+  border-top: 1px solid var(--font-color);
+  padding: 10px;
+  text-align: left;
 }
