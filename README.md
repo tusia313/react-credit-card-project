@@ -1,5 +1,9 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Credit Card form !
+
+In this project I used React (finally !), as thx to this library I can store the objects in state and working with it. Also it's nice remainder of working with form THUS handling the change in the inputs. Credit card's number (to be more specific - its start numbers) I can use to create a specific card visuals ! If that's not fascinating, I don't know what is :D
+
+***
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -69,8 +73,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-||||||| empty tree
-=======
-# react-credit-card-project
-Second basic React project, contains useState hook. :)
->>>>>>> 0cf6322cc4fb92a95cf1c87d7ceff5c0fc986db9
