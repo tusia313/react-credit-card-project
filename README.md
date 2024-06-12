@@ -1,6 +1,8 @@
-# Credit Card form !
+# 🔮 Credit Card form 🔮
 
 In this project I used React (finally !), as thx to this library I can store the objects in state and working with it. Also it's nice remainder of working with form THUS handling the change in the inputs. Credit card's number (to be more specific - its start numbers) I can use to create a specific card visuals ! If that's not fascinating, I don't know what is :D
+
+🃏 ## First look
 
 ***
 ## Getting Started with Create React App

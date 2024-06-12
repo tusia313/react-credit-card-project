@@ -2,10 +2,10 @@ const App = () => {
 
 
   return (
-    <div>
-     
-    </div>
-  )
+    <div className="form-container">
+     Bankowość to ja.
+        </div>
+        )
 }
 
-export default App;
+        export default App;
