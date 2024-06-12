@@ -1,13 +1,14 @@
-const App = () => {
+import CreditCard from "./components/CreditCard"
 
+const App = () => {
   const handleSubmit = () => {
     console.log("submitted !")
   }
 
   return (
     <div className="form-container">
+      <CreditCard/>
       <form onSubmit={handleSubmit}>
-
         <div className="input-container">
           <label>Name on card
             <input placeholder="123456789" required/>
