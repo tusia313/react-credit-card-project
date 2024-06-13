@@ -1,7 +1,7 @@
 const CreditCard = () => {
     return (
         <div className="credit-card">
-            <div className="visa-front-site">
+            <div className="visa-front-site card">
                 <div className="card-deatils-container">
                     <div className="detail-container">
                         <p>Expiry date</p>
@@ -11,18 +11,17 @@ const CreditCard = () => {
                         <p>Carholder</p>
                         <h2>xxx</h2>
                     </div>
-
-                    <div className="number-display">
+                </div>
+                <div className="number-display">
                         <h3>xxxxxxx</h3>
                     </div>
-                </div>
             </div>
 
-            <div className="visa-back-side">
+            {/* <div className="visa-back-side card">
                 <div id="cvv-display">
                     <p>xxx</p>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
