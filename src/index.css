@@ -126,7 +126,7 @@ form .info-message {
   border-radius: 10px;
   position: relative;
   bottom: 30px;
-  /* background: var(--input-focus); */
+  background: var(--input-focus);
   box-shadow: 4px 4px var(--main-color);
 }
 

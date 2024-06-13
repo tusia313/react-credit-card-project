@@ -1,26 +1,28 @@
-const CreditCard = () => {
+const CreditCard = ({ formData }) => {
+    console.log(formData)
     const side = 'front'
     return (
         <div className="credit-card">
-            {side === 'front' &&<div className="visa-front-site card">
+            {side === 'front' && <div className="visa-front-site card">
                 <div className="card-deatils-container">
                     <div className="detail-container">
-                        <p>Expiry date</p>
-                        <h2>xxx</h2>
+                        <p>Cartholder</p>
+                        <h2>{formData.name}</h2>
+
                     </div>
                     <div className="detail-container">
-                        <p>Carholder</p>
-                        <h2>xxx</h2>
+                        <p>Expiry date</p>
+                        <h2>{formData.date}</h2>
                     </div>
                 </div>
                 <div className="number-display">
-                        <h3>xxxxxxx</h3>
-                    </div>
+                    <h3>{formData.number}</h3>
+                </div>
             </div>}
 
-            {side === 'back' &&<div className="visa-back-side card">
+            {side === 'back' && <div className="visa-back-side card">
                 <div id="cvv-display">
-                    <p>xxx</p>
+                    <p>{formData.cvv}</p>
                 </div>
             </div>}
         </div>
