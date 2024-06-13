@@ -1,7 +1,8 @@
 const CreditCard = () => {
+    const side = 'front'
     return (
         <div className="credit-card">
-            <div className="visa-front-site card">
+            {side === 'front' &&<div className="visa-front-site card">
                 <div className="card-deatils-container">
                     <div className="detail-container">
                         <p>Expiry date</p>
@@ -15,13 +16,13 @@ const CreditCard = () => {
                 <div className="number-display">
                         <h3>xxxxxxx</h3>
                     </div>
-            </div>
+            </div>}
 
-            {/* <div className="visa-back-side card">
+            {side === 'back' &&<div className="visa-back-side card">
                 <div id="cvv-display">
                     <p>xxx</p>
                 </div>
-            </div> */}
+            </div>}
         </div>
     )
 }

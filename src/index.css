@@ -124,9 +124,10 @@ form .info-message {
   /* height: 270px; */
   height: 240px;
   border-radius: 10px;
-  background: var(--input-focus);
   position: relative;
   bottom: 30px;
+  /* background: var(--input-focus); */
+  box-shadow: 4px 4px var(--main-color);
 }
 
 .credit-card .card {
@@ -170,10 +171,34 @@ p {
 
 .visa-back-side #cvv-display p {
   padding: 25px;
-
 }
 
-.visa-front-site {
-  background-image: url('./images/visa-front-site.png');
+.visa-front-side {
+  background-image: url('./images/visa-front-side.png');
+  background-size: 100%;
+}
+
+.visa-back-side {
+  background-image: url('./images/visa-back-side.png');
+  background-size: 100%;
+}
+
+.amex-front-side {
+  background-image: url('./images/amex-front-side.png');
+  background-size: 100%;
+}
+
+.amex-back-side {
+  background-image: url('./images/amex-back-side.png');
+  background-size: 100%;
+}
+
+.mastercard-front-side {
+  background-image: url('./images/mastercard-front-side.png');
+  background-size: 100%;
+}
+
+.mastercard-back-side {
+  background-image: url('./images/mastercard-back-side.png');
   background-size: 100%;
 }
