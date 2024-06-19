@@ -1,7 +1,24 @@
 const CreditCard = ({ formData, side }) => {
+
+    const getCardName = () => {
+        if (formData.number.slice(0, 2) === '37' ||
+            (formData.number.slice(0, 2) === '34')) {
+            return 'amber'
+        }
+        if (formData.number.slice(0, 1) === '4') {
+            return 'mastercard'
+        }
+        if (formData.number.slice(0, 3) === '550' ||
+            formData.number.slice(0, 3) === '555') {
+            return 'visa'
+        }
+        // by default
+        return 'visa'
+    }
+
     return (
         <div className="credit-card">
-            {side === 'front' && <div className="visa-front-side card">
+            {side === 'front' && <div className={`${getCardName()}-front-side card`}>
                 <div className="card-deatils-container">
                     <div className="detail-container">
                         <p>Cartholder</p>
@@ -18,7 +35,7 @@ const CreditCard = ({ formData, side }) => {
                 </div>
             </div>}
 
-            {side === 'back' && <div className="visa-back-side card">
+            {side === 'back' && <div className={`${getCardName}-back-side card`}>
                 <div id="cvv-display">
                     <p>{formData.cvv}</p>
                 </div>
