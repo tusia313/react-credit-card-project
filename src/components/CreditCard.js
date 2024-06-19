@@ -3,7 +3,7 @@ const CreditCard = ({ formData, side }) => {
     const getCardName = () => {
         if (formData.number.slice(0, 2) === '37' ||
             (formData.number.slice(0, 2) === '34')) {
-            return 'amber'
+            return 'amex'
         }
         if (formData.number.slice(0, 1) === '4') {
             return 'mastercard'
@@ -15,6 +15,25 @@ const CreditCard = ({ formData, side }) => {
         // by default
         return 'visa'
     }
+
+    const numberTile = [
+        '- ',
+        '- ',
+        '- ',
+        '- ',
+        '- ',
+        '- ',
+        '- ',
+        '- ',
+        '- ',
+        '- ',
+        '- ',
+        '- ',
+        '- ',
+        '- ',
+        '- ',
+        '-'
+    ]
 
     return (
         <div className="credit-card">
@@ -31,11 +50,15 @@ const CreditCard = ({ formData, side }) => {
                     </div>
                 </div>
                 <div className="number-display">
-                    <h3>{formData.number}</h3>
+                    {/* <h3>{formData.number}</h3> */}
+                    {/* Dzięki klamrą {} mapujemy każdy jakby obiekt w łańcuchu */}
+                    {numberTile.map((item, index) => (
+                        <h3 key={index}>{formData.number[index] || item}</h3>
+                    ))}
                 </div>
             </div>}
 
-            {side === 'back' && <div className={`${getCardName}-back-side card`}>
+            {side === 'back' && <div className={`${getCardName()}-back-side card`}>
                 <div id="cvv-display">
                     <p>{formData.cvv}</p>
                 </div>

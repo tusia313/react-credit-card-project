@@ -27,13 +27,13 @@ const App = () => {
     }
 
     setFormData({ ...formData, [name]: value })
-    
+
     if (name === 'cvv') {
       setSide('back');
     } else {
       setSide('front');
     }
-    
+
   }
 
   const handleSubmit = (e) => {
@@ -43,7 +43,7 @@ const App = () => {
 
   return (
     <div className="form-container">
-      <CreditCard formData={formData} side={side}/>
+      <CreditCard formData={formData} side={side} />
       <form onSubmit={handleSubmit}>
         <div className="input-container">
           <label>Name on card
