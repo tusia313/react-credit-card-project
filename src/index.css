@@ -6,6 +6,7 @@
   --main-color: black;
   --cardCVV: rgba(231, 221, 221, 0.8);
   --card-number: rgb(255, 255, 255);
+  --card-shadow: rgba(0, 0, 0, 0.15);
 }
 
 * {
@@ -121,13 +122,11 @@ form .info-message {
 
 .credit-card {
   width: 430px;
-  /* height: 270px; */
-  height: 240px;
+  height: 270px;
   border-radius: 10px;
   position: relative;
   bottom: 30px;
-  background: var(--input-focus);
-  box-shadow: 4px 4px var(--main-color);
+  box-shadow: 6px 6px var(--card-shadow)
 }
 
 .credit-card .card {
@@ -163,10 +162,17 @@ p {
   margin: 5px;
 }
 
+.visa-back-side {
+  position: relative;
+}
 .visa-back-side #cvv-display {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  position: absolute;
+  top: 55%;
+  font-style: italic;
+  background: linear-gradient(120deg,#fff, #C0C0C0 );
 }
 
 .visa-back-side #cvv-display p {

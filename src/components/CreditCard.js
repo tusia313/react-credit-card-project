@@ -1,9 +1,7 @@
-const CreditCard = ({ formData }) => {
-    console.log(formData)
-    const side = 'front'
+const CreditCard = ({ formData, side }) => {
     return (
         <div className="credit-card">
-            {side === 'front' && <div className="visa-front-site card">
+            {side === 'front' && <div className="visa-front-side card">
                 <div className="card-deatils-container">
                     <div className="detail-container">
                         <p>Cartholder</p>
