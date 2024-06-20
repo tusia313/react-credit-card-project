@@ -2,7 +2,22 @@
 
 In this project I used React (finally !), as thx to this library I can store the objects in state and working with it. Also it's nice remainder of working with form THUS handling the change in the inputs. Credit card's number (to be more specific - its start numbers) I can use to create a specific card visuals ! If that's not fascinating, I don't know what is :D
 
-🃏 ## First look
+## 🃏 First look 
+
+![first page](./images/screen_1.png)
+
+![first page](./images/screen_2.png)
+
+![first page](./images/screen_3.png)
+
+
+## 🃏 Technologies
+
++ finally React !
+
+## 🃏 Inspiration
+This little project is part of an amazing Full Stack Developer Course created by  ♥ Ania Kubow ♥. Love this women, her sense of humor and ability to explain hard code-things in a way that I finally understand. 🏆
+
 
 ***
 ## Getting Started with Create React App
