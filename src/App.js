@@ -16,7 +16,7 @@ const App = () => {
 
   const [side, setSide] = useState('front')
 
-  const [message, setMessage] = useState('Please enter Your credit card details')
+  const [message, setMessage] = useState('Please enter Your credit card details.')
 
   const handleChange = (e) => {
     const name = e.target.name
