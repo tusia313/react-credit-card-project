@@ -4,11 +4,11 @@ In this project I used React (finally !), as thx to this library I can store the
 
 ## 🃏 First look 
 
-![first page](./images/screen_1.png)
+![first page](./src/images/screen_1.png)
 
-![first page](./images/screen_2.png)
+![first page](./src/images/screen_2.png)
 
-![first page](./images/screen_3.png)
+![first page](./src/images/screen_3.png)
 
 
 ## 🃏 Technologies
