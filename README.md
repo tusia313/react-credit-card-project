@@ -4,13 +4,12 @@ Simple project is React, where I can store the objects in state and working with
 
 ## 🃏 First look 
 
-On the front You can insert Your basic information - depending on Your number's start the background of the card (one among the three) is shown. What You put into proper input, at the same time appears on the card.
-
 ![first page](./src/images/screen_1.png)
 
-By when You start writing a CVV number, the front is switched to back. Amazing, is not? ;)
+On the front You can insert Your basic information - depending on Your number's start the background of the card (one among the three) is shown. What You put into proper input, at the same time appears on the card.
 ![first page](./src/images/screen_2.png)
 
+By when You start writing a CVV number, the front is switched to back. Amazing, is not? ;)
 ![first page](./src/images/screen_3.png)
 
 
