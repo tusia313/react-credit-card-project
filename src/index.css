@@ -1,21 +1,23 @@
 :root {
-  --input-focus: #2d8cf0;
-  --font-color: #323232;
-  --font-color-sub: #666;
-  --bg-color: beige;
-  --main-color: black;
+  --input-focus: rgb(45, 140, 240);
+  --font-color: rgb(75,63,63);
+  --font-color-sub: rgb(245, 245, 245);
+  --bg-color: rgb(245, 245, 220);
+  --main-color: rgb(0, 0, 0);
   --cardCVV: rgba(231, 221, 221, 0.8);
   --card-number: rgb(255, 255, 255);
   --card-shadow: rgba(0, 0, 0, 0.15);
 }
 
 * {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 body {
-  /* background: linear-gradient(120deg,rgb(246, 241, 11), rgb(253, 160, 133)); */
-  background: #e8e8e8;
+  /* background: linear-gradient(120deg,whitesmoke, #2d8cf0); */
+  background-image: url(images/low-poly-grid-haikei.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   height: 100vh;
   align-items: center;
@@ -25,7 +27,7 @@ body {
 .form-container {
   width: 450px;
   padding: 7px;
-  background: lightblue;
+  background: var(--input-focus);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +53,7 @@ form .input-container {
 form label {
   display: flex;
   flex-direction: column;
-  color: var(--font-color);
+  color: var(--font-color-sub);
   font-weight: 600;
 }
 
@@ -70,7 +72,7 @@ form input {
 }
 
 form input::placeholder {
-  color: var(--font-color-sub);
+  color: var(--font-color);
   opacity: 0.8;
 }
 
