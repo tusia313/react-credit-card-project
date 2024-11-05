@@ -123,11 +123,11 @@ form .info-message {
 }
 
 .credit-card {
-  width: 430px;
-  height: 270px;
-  border-radius: 15px;
+  width: 26.8rem;
+  height: 16.8rem;
+  border-radius: 2rem;
   position: relative;
-  bottom: 30px;
+  bottom: 2rem;
   /* box-shadow: 6px 6px var(--card-shadow); */
 }
 
@@ -140,19 +140,19 @@ form .info-message {
 }
 
 .credit-card .card-deatils-container {
-  padding: 25px;
-  width: 360px;
+  padding: 1.5rem;
+  width: 22.5rem;
 }
 
 .credit-card .detail-container {
-  height: 55px;
+  height: 3.4rem;
 }
 
 .credit-card .number-display {
   background-color: var(--cardCVV);
-  width: 360px;
-  height: 60px;
-  font-size: 25px;
+  width: 22.5rem;
+  height: 3.8rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,7 +161,7 @@ form .info-message {
 .credit-card h2,
 p {
   color: var(--bg-color);
-  margin: 5px;
+  margin: 0.4rem;
 }
 
 .card {
