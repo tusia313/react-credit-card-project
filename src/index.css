@@ -56,14 +56,13 @@ form label {
 }
 
 form input {
-  /* width: 300px; */
-  margin: 5px 0;
-  padding: 11px;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
   border-radius: 5px;
   border: 2px solid var(--main-color);
   background-color: var(--bg-color);
   box-shadow: 4px 4px var(--main-color);
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--font-color);
   outline: none;
@@ -88,29 +87,29 @@ form input[type='submit'] {
   border: 2px solid var(--main-color);
   background-color: var(--bg-color);
   box-shadow: 4px 4px var(--main-color);
-  /* font-size: 18px; */
   font-weight: 600;
   color: var(--font-color);
   cursor: pointer;
 }
 
 form input[type='submit']:active {
-  background-color: ;
+  background-color: var(--input-focus) ;
+  color: var(--bg-color);
 }
 
 form input[type='month'] {
-  width: 240px;
+  width: 15rem;
 }
 
 form input#cvv {
-  width: 100px;
+  width: 6.2rem;
 }
 
 form .supporting-inputs-container {
   display: flex;
   justify-content: space-between;
-  width: 400px;
-  margin: 7px 0;
+  width: 28rem;
+  margin: 0.5rem 0;
 }
 
 form .info-message {
@@ -118,8 +117,8 @@ form .info-message {
   border-top: 2px solid var(--font-color);
   color: var(--font-color-sub);
   /* font-weight: 600; */
-  font-size: 12px;
-  padding-top: 10px;
+  font-size: 0.8rem;
+  padding-top: 0.7rem;
   text-align: left;
 }
 
